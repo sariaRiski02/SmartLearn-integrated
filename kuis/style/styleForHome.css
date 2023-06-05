@@ -1,0 +1,89 @@
+/* background yang dipilih */
+.pilihan1{
+    background-color: #197278;
+}
+
+.pilihan2:hover,.pilihan3:hover,.pilihan4:hover{
+    background-color: #8abbbf34;
+}
+
+.nama-belajar{
+    color: white;
+}
+
+/* atur matapelajaran */
+
+.container-mapel{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.kursus{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 200px;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #3e76b6;
+}
+.mapel-gambar,.nama-kursus{
+    margin: auto;
+    width: 80%;
+    color: white;
+}
+
+.nama-kursus{
+    display: flex;
+    justify-content: center;
+}
+
+.ips{
+    width: 60%;
+}
+
+.english{
+    margin-top: 30px;
+}
+
+/* atur info */
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.info1,.info2{
+    margin-top: 30px;
+    width: 80%;
+    background-color: #197278;
+    height: 100px;
+    border-radius: 10px;
+}
+.tombol-skor{
+    margin: auto;
+}
+.info1{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+}
+/* atur skor */
+.angka-skor{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.skor-diamond{
+    margin-top: 3px;
+    margin-right: 2px;
+    font-size: 30px;
+}
+
+

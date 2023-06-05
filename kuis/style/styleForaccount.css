@@ -1,0 +1,13 @@
+/* background yang dipilih */
+.pilihan3{
+    background-color: #197278;
+}
+
+.pilihan2:hover,.pilihan1:hover,.pilihan4:hover{
+    background-color: #8abbbf34;
+}
+
+.nama-akun{
+    color: white;
+}
+

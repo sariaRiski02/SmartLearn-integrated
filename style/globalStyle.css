@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'viga';
+  src: url('../font/Viga-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-family: viga;
+}
+
+h1.kelas{
+  padding-top: 5%;
+  color: #13a3ad;;
+}
+
+h1.mapel{
+  color: #13a3ad;;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #197278;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+a.smartlearn {
+  color: #f5f5f5;
+  font-size: 20px;
+}
+
+a.smartlearn:hover {
+  color: #f5f5f5;
+}
+
+.logo {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.logo img {
+  width: 50px;
+  margin: auto;
+}
+
+.logo p {
+  font-size: 25px;
+  margin-left: 10px;
+  color: white;
+  margin: auto;
+}
+
+nav {
+  width: 300px;
+  
+  margin-right: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+  padding: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+/* menghilangkan navigasi bar */
+.nav-toggle{
+  display: none;
+}
+
+/* animasi navigasi */
+/* Animasi */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul li {
+  animation: slideIn 0.5s ease-in-out both;
+  animation-delay: calc(0.1s * var(--index));
+}
+
+nav ul li:nth-child(odd) {
+  --index: 1;
+}
+
+nav ul li:nth-child(even) {
+  --index: 2;
+}
+
+/* efek hover pada navigasi */
+nav ul li a {
+  position: relative;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      height: 50px;
+  }
+
+  .logo p {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  nav ul {
+      margin-top: 5px;
+  }
+  .logo{
+    margin: 0 auto;
+    display: none;
+  }
+  nav{
+    margin: auto;
+  }
+
+}

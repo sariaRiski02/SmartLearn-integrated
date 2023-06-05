@@ -1,0 +1,12 @@
+/* background yang dipilih */
+.pilihan2{
+    background-color: #197278;
+}
+
+.pilihan1:hover,.pilihan3:hover,.pilihan4:hover{
+    background-color: #8abbbf34;
+}
+
+.nama-papan-skor{
+    color: white;
+}

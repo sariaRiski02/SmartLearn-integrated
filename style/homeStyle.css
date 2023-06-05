@@ -1,0 +1,212 @@
+
+
+/* Main */
+ /* CSS untuk kontainer mata pelajaran */
+/* CSS untuk kontainer mata pelajaran */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+  
+  /* CSS untuk kotak mata pelajaran */
+  .mata-pelajaran {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mata-pelajaran:hover {
+    transform: scale(1.1);
+  }
+  
+  /* CSS untuk teks pada mata pelajaran */
+  .tulisan-matematika,
+  .tulisan-ipa,
+  .tulisan-Bahasa_indonesia {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .mata-pelajaran:hover .tulisan-matematika,
+  .mata-pelajaran:hover .tulisan-ipa,
+  .mata-pelajaran:hover .tulisan-Bahasa_indonesia {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* CSS untuk gambar pada mata pelajaran */
+  .mata-pelajaran img {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .mata-pelajaran:hover img {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+main {
+    margin-top: 100px;
+    margin: 20px;
+}
+
+.mata-pelajaran {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mata-pelajaran img {    
+    width: 100px;
+    margin: auto;
+}
+
+.tulisan-matematika,
+.tulisan-ipa,
+.tulisan-Bahasa_indonesia {
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+/* warna untuk box matapelajarn */
+.container a{
+    text-decoration: none;
+    color: #197278;
+}
+.matematika{
+    background-color: #e35745;
+}
+.ipa{
+    background-color: #52908a;
+
+}
+.ips{
+    background-color: #c0ec13;
+
+}
+.bahasa-indonesia{
+    background-color: #e86a20;
+
+}
+.bahasa-inggris{
+    background-color: rgb(67, 67, 131);
+}
+
+/* atur gambar matapelajarn*/
+.ips img{
+    width: 80px;
+}
+
+/* for judul */
+
+/* CSS untuk judul */
+h1 {
+    font-size: 30px;
+    margin-top: 120px;
+    text-align: center;
+    color: #197278;
+    font-family: viga, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+    animation: fade-in 1s ease-in-out;
+}
+
+  .smartlearn {
+    color: #197278;
+    font-weight: bold;
+  }
+  
+  /* CSS untuk paragraf */
+  p {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    color: #555555;
+    font-family: viga, sans-serif;
+    animation: slide-in 1s ease-in-out;
+  }
+  
+  /* Animasi fade-in untuk judul */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animasi slide-in untuk paragraf */
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+/* akhir judul */
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .mata-pelajaran {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mata-pelajaran img {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    main{
+        margin-top: 10px;
+    }
+    .container{
+        margin-top: 20px;
+    }
+}
